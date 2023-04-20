@@ -1,7 +1,7 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 body {
-  background: no-repeat top url("./images/bg-top.svg");
+  background: no-repeat top url("/images/bg-top.svg");
   background-position-x: right -200px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -169,7 +169,7 @@ main .card-container .card.professional button:hover a {
   main {
     position: absolute;
     bottom: 0;
-    background: no-repeat bottom left url("./images/bg-bottom.svg");
+    background: no-repeat bottom left url("/images/bg-bottom.svg");
     width: 100%;
   }
   main .card-container {
