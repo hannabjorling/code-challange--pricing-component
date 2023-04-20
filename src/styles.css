@@ -124,6 +124,12 @@ main .card-container .card button:hover {
 main .card-container .card button:hover a {
   color: hsl(237deg, 63%, 64%);
 }
+main .card-container .card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  transition: 0.8s ease;
+  margin: unset;
+}
 main .card-container .card.professional {
   background: linear-gradient(to bottom right, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
 }
