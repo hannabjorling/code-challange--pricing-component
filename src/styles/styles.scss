@@ -56,6 +56,10 @@ main {
                 background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
             }
 
+            .slider:hover {
+                opacity: 80%;
+            }
+
             .slider::before {
                 position: absolute;
                 content: '';
@@ -129,6 +133,16 @@ main {
                     font-weight: 700;
                 }
             }
+
+            button:hover {
+                background: #FFFFFF;
+                cursor: pointer;
+                border: 1px solid #000;
+
+                a {
+                    color: hsl(237, 63%, 64%);
+                }
+            }
         }
 
         .card.professional {
@@ -146,8 +160,32 @@ main {
                     color: hsl(237, 63%, 64%);
                 }
             }
+
+            button:hover {
+                background: hsl(237, 63%, 64%);
+                cursor: pointer;
+                border: 1px solid #FFF;
+
+                a {
+                    color: #FFF;
+                }
+            }
         }
     }
+}
+
+.attribution {
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.attribution a {
+    padding-left: 5px;
+    color: hsl(228, 45%, 44%);
 }
 
 @media screen and (min-width: 1440px) {
@@ -160,10 +198,12 @@ main {
         position: absolute;
         bottom: 0;
         background: no-repeat bottom left url('../../public/images/bg-bottom.svg');
+        width: 100%;
 
         .card-container {
             display: flex;
             justify-content: center;
+            width: 100%;
 
             .card {
                 min-width: 305px;

@@ -49,6 +49,9 @@ main .heading-container .content-box .slider {
   border-radius: 24px;
   background: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
 }
+main .heading-container .content-box .slider:hover {
+  opacity: 80%;
+}
 main .heading-container .content-box .slider::before {
   position: absolute;
   content: "";
@@ -113,6 +116,14 @@ main .card-container .card button a {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
+main .card-container .card button:hover {
+  background: #FFFFFF;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+main .card-container .card button:hover a {
+  color: hsl(237deg, 63%, 64%);
+}
 main .card-container .card.professional {
   background: linear-gradient(to bottom right, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
 }
@@ -126,6 +137,28 @@ main .card-container .card.professional button {
 main .card-container .card.professional button a {
   color: hsl(237deg, 63%, 64%);
 }
+main .card-container .card.professional button:hover {
+  background: hsl(237deg, 63%, 64%);
+  cursor: pointer;
+  border: 1px solid #FFF;
+}
+main .card-container .card.professional button:hover a {
+  color: #FFF;
+}
+
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  bottom: 0;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.attribution a {
+  padding-left: 5px;
+  color: hsl(228deg, 45%, 44%);
+}
 
 @media screen and (min-width: 1440px) {
   body {
@@ -135,10 +168,12 @@ main .card-container .card.professional button a {
     position: absolute;
     bottom: 0;
     background: no-repeat bottom left url("../../public/images/bg-bottom.svg");
+    width: 100%;
   }
   main .card-container {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
   main .card-container .card {
     min-width: 305px;
