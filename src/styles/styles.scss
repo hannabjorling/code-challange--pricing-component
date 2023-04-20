@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 body {
-    background: no-repeat top url('../../public/images/bg-top.svg');
+    background: no-repeat top url('./images/bg-top.svg');
     background-position-x: right -200px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -13,6 +13,7 @@ body {
 
 main {
     min-height: 100vh;
+    overflow-x: hidden;
 
     .heading-container {
         h1 {
@@ -183,15 +184,10 @@ main {
 
 .attribution {
     font-size: 11px;
-    position: absolute;
-    bottom: 0;
-    display: inline-flex;
-    width: 100%;
-    justify-content: center;
+    text-align: center;
 }
 
 .attribution a {
-    padding-left: 5px;
     color: hsl(228, 45%, 44%);
 }
 
@@ -204,7 +200,7 @@ main {
     main {
         position: absolute;
         bottom: 0;
-        background: no-repeat bottom left url('../../public/images/bg-bottom.svg');
+        background: no-repeat bottom left url('./images/bg-bottom.svg');
         width: 100%;
 
         .card-container {
@@ -227,5 +223,15 @@ main {
         }
     }
 
-    .attribution {}
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        display: inline-flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .attribution a {
+        padding-left: 5px;
+    }
 }

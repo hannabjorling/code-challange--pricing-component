@@ -7,7 +7,7 @@ slider.addEventListener('click', () => {
     const price = document.querySelector('.price')
     const basicEl = document.querySelector('#basic-price')
     const professionalEl = document.querySelector('#prefessional-price')
-    const masterEl = document.querySelector('#master-price')
+    const masterEl = document.querySelector('#master-price');
 
     // annually = default, switch to monthly
     if (price?.innerHTML == '$199.99') {
@@ -20,4 +20,3 @@ slider.addEventListener('click', () => {
         masterEl!.innerHTML = `&dollar;399.99`
     }
 })
-
